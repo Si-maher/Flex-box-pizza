@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html,
+
 body {
     color: #444;
     font-family: Roboto;
@@ -14,17 +14,23 @@ body {
 }
 .pizza {
     display: flex;
+    width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 30px 80px 10px rgba(0,0,0,.3 );
 }
 .pizza__hero {
-    
+    flex: 0 0 45%;
+    /* grow / shrink / width  */
 }
 .pizza__img {
     width: 100%;
 }
 .pizza__content{
     background-color: #fff;
+    flex: 1;
 }
 .pizza__price{
     background: linear-gradient(to bottom,#67b26f, #4ca2cd);
+    flex: 0 1 50px;
 
 }
