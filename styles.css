@@ -36,6 +36,7 @@ body {
 .pizza__content{
     background-color: #fff;
     flex: 1;
+    padding: 30px 10px;
 }
 .pizza__price{
     /* align-self: center; For the individual content */
@@ -49,3 +50,20 @@ body {
     font-size: 18px;
 
 }
+.pizza__title {
+    display: flex;
+    align-items: center;
+}
+.pizza__heading {
+    margin-right: auto;
+}
+.pizza__tag {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50px;
+    margin-left: 8px;
+    padding: 2px 6px;
+}
+.pizza__tag--1{background-color: #67b26f;}
+.pizza__tag--2{background-color: #4ca2cd;}
