@@ -8,15 +8,21 @@
 body {
     color: #444;
     font-family: Roboto;
-    padding: 100px;
+    padding: 50px;
     background: linear-gradient(to bottom right,#67b26f, #4ca2cd);
     height: 100vh;
+    display: flex;
+    align-items: center; /* X Axis*/
+    justify-content: center; /* Y Axis*/
 }
 .pizza {
     display: flex;
+    /* Align items here in the container */
+    /* align-items: center; Moves up or down the X axis */
     width: 800px;
     border-radius: 5px;
-    box-shadow: 0 30px 80px 10px rgba(0,0,0,.3 );
+    box-shadow: 10px 10px 30px 30px rgba(0,0,0,.5 );
+    overflow: hidden;
 }
 .pizza__hero {
     flex: 0 0 45%;
@@ -24,13 +30,22 @@ body {
 }
 .pizza__img {
     width: 100%;
+    display: block;
+    /* Always display img as block */
 }
 .pizza__content{
     background-color: #fff;
     flex: 1;
 }
 .pizza__price{
+    /* align-self: center; For the individual content */
     background: linear-gradient(to bottom,#67b26f, #4ca2cd);
     flex: 0 1 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    writing-mode: vertical-rl;
+    font-size: 18px;
 
 }
