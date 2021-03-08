@@ -21,7 +21,7 @@ body {
     /* align-items: center; Moves up or down the X axis */
     width: 800px;
     border-radius: 5px;
-    box-shadow: 10px 10px 30px 30px rgba(0,0,0,.5 );
+    box-shadow: 10px 10px 30px 30px rgba(0,0,0,.3 );
     overflow: hidden;
 }
 .pizza__hero {
@@ -65,5 +65,25 @@ body {
     margin-left: 8px;
     padding: 2px 6px;
 }
-.pizza__tag--1{background-color: #67b26f;}
-.pizza__tag--2{background-color: #4ca2cd;}
+.pizza__tag--1 {background: linear-gradient(to bottom right,#67b26f, #4ca2cd);}
+.pizza__tag--2 {background: linear-gradient(to bottom,#67b26f, #4ca2cd);}
+.pizza__discription {
+    font-size: 16px;
+    margin-top: 30px;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+.pizza__details {
+    display: flex;
+    justify-content: center;
+    
+}
+.pizza__detail {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: 700;
+}
+.emoji {
+margin-right: 5px;
+}
